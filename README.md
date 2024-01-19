@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://i.imgur.com/Z0Rp10B.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/creative-agency-singlepage-site-using-tailwind-css-uGNpN0pyao](https://www.frontendmentor.io/solutions/creative-agency-singlepage-site-using-tailwind-css-uGNpN0pyao)
+- Live Site URL: [https://creative-single-page.netlify.app/](https://creative-single-page.netlify.app/)
 
 ## My process
 
