@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.pattern {
+  position: relative;
+}
+
+.pattern::before {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 63px;
+  height: 29px;
+}
+
+.pattern-red::before {
+  background-image: url('/desktop/bg-pattern-wave-red.svg');
+  top: 0;
+  translate: 0 -50%;
+}
+
+.pattern-white::before,
+.pattern-bottom::before {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pattern-red::before {
+    top: 9rem;
+    left: 0;
+    translate: -50% 0;
+  }
+
+  .pattern-white::before {
+    display: block;
+    background-image: url('/desktop/bg-pattern-wavy-white.svg');
+    top: 7.875rem;
+    right: 0;
+    translate: 50% 0;
+  }
+}
+
+@media (min-width: 1110px) {
+  .pattern::before {
+    width: 134px;
+    height: 60px;
+  }
+
+  .pattern-red::before {
+    top: 14.625rem;
+  }
+
+  .pattern-white::before {
+    top: 11.625rem;
+  }
+
+  .pattern-bottom::before {
+    top: 50%;
+    translate: -50% -50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pattern-bottom::before {
+    display: block;
+    translate: -50% -50%;
+  }
+}

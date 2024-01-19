@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frontend Mentor Challenge - Creative single page site solution">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Creative single page site</title>
+  </head>
+  <body class="text-sm leading-sm xl:text-lg xl:leading-lg">
+    <nav class="px-6 py-10 text-white relative md:px-10 md:py-14 md:bg-navbar-gradient-md xl:bg-navbar-gradient-xl">
+      <div class="flex justify-between items-center xl:max-w-[1110px] mx-auto">
+        <img src="/desktop/logo.svg" class="w-[161px]" alt="Creative Logo" />
+        <button class="md:hidden" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu-container" id="menu-btn">
+          <img src="/mobile/icon-hamburger.svg" alt="Hamburger icon" aria-hidden="true" id="icon-hamburger" />
+          <img src="/mobile/icon-cross.svg" class="hidden" alt="Close icon" aria-hidden="true" id="icon-close" />
+        </button>
+        <div class="hidden md:flex items-center gap-7 xl:gap-12">
+          <ul class="flex items-center gap-5 xl:text-md xl:leading-lg xl:gap-8">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+          <button class="w-full bg-dark text-white px-5 py-[1.375rem] font-extrabold text-md leading-md xl:px-11 hover:bg-dark-hover transition-colors">Schedule a Call</button>
+        </div>
+      </div>
+      <ul class="absolute top-full right-6 w-full max-w-[252px] bg-dark px-7 pt-8 pb-7 flex flex-col gap-6 text-center text-lg leading-lg invisible opacity-0 translate-y-2 transition-all md:hidden" id="menu-container">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><button class="w-full bg-red text-white py-5 font-extrabold text-md leading-md hover:bg-red-hover transition-colors">Schedule a Call</button></li>
+      </ul>
+    </nav>
+    <header class="bg-white text-black">
+      <img src="/mobile/image-hero.jpg" class="w-full md:hidden" alt="Hero background" />
+      <div class="px-6 pt-14 pb-24 md:px-10 md:pt-[4.75rem] md:pb-[9.375rem] md:bg-hero-md md:bg-no-repeat md:bg-right md:bg-contain xl:pt-28 xl:pb-40 xl:bg-hero-xl">
+        <div class="xl:max-w-[1110px] mx-auto">
+          <h1 class="text-h3 leading-h3 font-extrabold md:max-w-[398px] md:text-h2 md:leading-[3.5rem] xl:text-h1 xl:leading-h1 xl:max-w-[730px]">Branding & <span class="xl:block">website design agency</span></h1>
+          <p class="mt-6 md:max-w-[398px] md:mt-8 xl:mt-12 xl:max-w-[540px]">We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
+          <a href="#" class="inline-block mt-10 bg-red text-white px-10 py-6 text-lg leading-sm font-extrabold md:mt-8 xl:mt-12 hover:bg-red-hover transition-colors">Learn More</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-col md:flex-row">
+        <picture class="md:flex-1">
+          <source media="(min-width: 1110px)" srcset="/desktop/image-strategic.jpg" />
+          <source media="(min-width: 768px)" srcset="/tablet/image-strategic.jpg" />
+          <img src="/mobile/image-strategic.jpg" alt="Strategic" class="w-full h-full object-cover md:h-[658px] xl:h-[984px]" />
+        </picture>
+        <div class="bg-dark text-white px-6 py-[4.5rem] relative pattern pattern-red md:w-[49%] md:py-[7.5rem] md:pl-[4.25rem] md:pr-10 xl:py-[12.5rem] xl:pl-[9.625rem] xl:pr-[6.625rem]">
+          <div class="xl:max-w-[445px]">
+            <h2 class="text-h4 leading-h4 font-extrabold xl:text-h2 xl:leading-h2"><span class="text-red">Design</span> is <span class="md:block">strategic.</span></h2>
+            <p class="mt-6 xl:mt-12">“A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm believers that success lies in creative collaboration with our clients.”</p>
+            <button class="mt-10 pb-2 text-red font-extrabold leading-[1.125rem] border-b-[2px] border-red xl:mt-12 xl:leading-[1.375rem] hover:text-red-hover hover:border-red-hover transition-colors">Schedule a Call</button>
+          </div>
+        </div>
+      </section>
+      <section class="relative px-6 py-24 bg-red flex flex-col gap-12 md:bg-transparent md:text-black md:flex-row md:p-0 md:gap-2 md:mt-[-7.5rem] md:justify-between xl:mt-[-12.5rem] xl:gap-0">
+        <div class="md:pt-[15.375rem] md:pl-10 md:flex-1 md:flex md:justify-end xl:pt-[25rem] xl:-mr-40 z-10">
+          <h2 class="font-extrabold text-h4 leading-h4 md:flex-1 text-white md:text-black md:max-w-[281px] xl:text-h2 xl:leading-h2 xl:max-w-[540px]">Our approach for creating a winning brand</h2>
+        </div>
+        <div class="flex flex-col gap-10 text-white md:bg-red md:px-11 md:py-[7.5rem] md:w-[57.03125%] xl:py-[12.5rem] xl:pl-[17.875rem] xl:w-[62.15%] xl:gap-14">
+          <article class="pl-4 pt-11 relative xl:pl-[3.75rem] xl:max-w-[31.5rem]">
+            <span class="absolute top-0 left-0 font-extrabold opacity-25 text-h1 leading-h1" aria-hidden="true">01</span>
+            <h3 class="font-extrabold xl:text-h5 xl:leading-h5">Brand Strategy</h3>
+            <p class="mt-4 xl:mt-6">Brand strategy is critical for long-term success. Outshining competitors and capturing the target audience are key.</p>
+          </article>
+          <article class="pl-4 pt-11 relative xl:pl-[3.75rem] xl:max-w-[31.5rem]">
+            <span class="absolute top-0 left-0 font-extrabold opacity-25 text-h1 leading-h1" aria-hidden="true">02</span>
+            <h3 class="font-extrabold xl:text-h5 xl:leading-h5">Brand Design</h3>
+            <p class="mt-4 xl:mt-6">Keeping the brand design unique and meaningful helps in communicating the brand’s timeless value effectively.</p>
+          </article>
+          <article class="pl-4 pt-11 relative xl:pl-[3.75rem] xl:max-w-[31.5rem]">
+            <span class="absolute top-0 left-0 font-extrabold opacity-25 text-h1 leading-h1" aria-hidden="true">03</span>
+            <h3 class="font-extrabold xl:text-h5 xl:leading-h5">Web Design</h3>
+            <p class="mt-4 xl:mt-6">A beautifully crafted website is the best tool for brand awareness, and ultimately results in increased revenues.</p>
+          </article>
+        </div>
+      </section>
+      <section class="flex flex-col text-white md:flex-row md:items-start">
+        <div class="flex md:order-1 md:w-[57.03125%] xl:w-[62.15%] overflow-hidden">
+          <div class="relative flex-shrink-0 w-full slides-item transition-transform">
+            <picture>
+              <source media="(min-width: 1110px)" srcset="/desktop/image-slide-1.jpg" />
+              <source media="(min-width: 768px)" srcset="/tablet/image-slide-1.jpg" />
+              <img src="/mobile/image-slide-1.jpg" class="w-full object-cover md:h-[472px] xl:h-[728px]" alt="Slide 1" />
+            </picture>
+            <div class="px-8 py-9 absolute bottom-0 left-0 w-full leading-[1.25rem] bg-slides-gradient flex flex-col items-end md:px-10 md:py-11 xl:px-[9.625rem] xl:py-[4.25rem] xl:leading-h5">
+              <p class="font-extrabold xl:text-h5">Lean Product Roadmap</p>
+              <p>2019 Project</p>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0 w-full slides-item transition-transform">
+            <picture>
+              <source media="(min-width: 1110px)" srcset="/desktop/image-slide-2.jpg" />
+              <source media="(min-width: 768px)" srcset="/tablet/image-slide-2.jpg" />
+              <img src="/mobile/image-slide-2.jpg" class="w-full object-cover md:h-[472px] xl:h-[728px]" alt="Slide 1" />
+            </picture>
+            <div class="px-8 py-9 absolute bottom-0 left-0 w-full leading-[1.25rem] bg-slides-gradient flex flex-col items-end md:px-10 md:py-11 xl:px-[9.625rem] xl:py-[4.25rem] xl:leading-h5">
+              <p class="font-extrabold xl:text-h5">New Majestic Hotel</p>
+              <p>2018 Project</p>
+            </div>
+          </div>
+          <div class="relative flex-shrink-0 w-full slides-item transition-transform">
+            <picture>
+              <source media="(min-width: 1110px)" srcset="/desktop/image-slide-3.jpg" />
+              <source media="(min-width: 768px)" srcset="/tablet/image-slide-3.jpg" />
+              <img src="/mobile/image-slide-3.jpg" class="w-full object-cover md:h-[472px] xl:h-[728px]" alt="Slide 1" />
+            </picture>
+            <div class="px-8 py-9 absolute bottom-0 left-0 w-full leading-[1.25rem] bg-slides-gradient flex flex-col items-end md:px-10 md:py-11 xl:px-[9.625rem] xl:py-[4.25rem] xl:leading-h5">
+              <p class="font-extrabold xl:text-h5">Crypto Dashboard</p>
+              <p>2016 Project</p>
+            </div>
+          </div>
+        </div>
+        <div class="pattern pattern-white px-6 py-16 bg-dark flex-1 flex md:mr-[-3.75rem] md:justify-end md:z-10 md:py-[6.25rem] md:pl-10 md:pr-[4.375rem] xl:mr-[-11.875rem] xl:pr-[7.75rem] xl:pl-[10.25rem] xl:py-[9.5rem]">
+          <div class="flex flex-col gap-6 md:gap-8 md:max-w-[281px] xl:gap-14 xl:max-w-[445px]">
+            <h2 class="text-h4 leading-h4 font-extrabold xl:text-h2 xl:leading-h2" data-slide="0">Brand naming & guidelines</h2>
+            <h2 class="text-h4 leading-h4 font-extrabold xl:text-h2 xl:leading-h2 hidden" data-slide="1">Brand identity & merchandise</h2>
+            <h2 class="text-h4 leading-h4 font-extrabold xl:text-h2 xl:leading-h2 hidden" data-slide="2">Brand identity & web design</h2>
+            <div class="flex gap-4 items-center">
+              <button aria-label="Previous slide" id="btn-next">
+                <img src="/desktop/icon-arrow-previous.svg" alt="Left arrow" aria-hidden="true" />
+              </button>
+              <button aria-label="Next slide" id="btn-previous">
+                <img src="/desktop/icon-arrow-next.svg" alt="Right arrow" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white text-dark px-6 py-[6.25rem] md:pt-[4.375rem] xl:pt-[7.5rem] xl:pb-[7.125rem] pattern pattern-red pattern-bottom">
+      <div class="relative max-w-[1110px] mx-auto flex flex-col items-start gap-12 justify-between md:flex-row md:items-center">
+        <h2 class="text-h4 leading-h4 font-extrabold flex-1 xl:text-h2 xl:leading-h2 xl:max-w-[635px]">Let's build something great together.</h2>
+        <button class="bg-red text-white px-11 py-[1.375rem] font-extrabold text-md leading-md hover:bg-red-hover transition-colors">Schedule a Call</button>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
